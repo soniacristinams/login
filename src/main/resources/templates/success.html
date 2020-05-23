@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Sonia Cristina Miranda Sabino</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/login.css}" />
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login">
+			<div class="wrap-login">
+				<div class="login-pic">
+					<img th:src="@{/images/emojiKey.png}" alt="Logo">
+				</div>
+				<form th:action="@{/login}" method="GET">
+					<span class="login-form-sucesso">Pronto!</span>
+					<span class="login-form-sucesso">Salvamos sua senha</span>
+					<span class="login-form-sucesso">Volte para área de login</span>
+                    <span class="login-form-sucesso">e acesse</span>
+					<span class="login-form-sucesso">nossa pagina</span>	
+					<div class="container-login-form-btn">
+						<button class="login-form-btn" name="registration" type="Submit">Área de Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

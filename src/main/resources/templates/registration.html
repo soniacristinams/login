@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Sonia Cristina Miranda Sabino</title>
+<link rel="stylesheet" type="text/css" th:href="@{/css/cadastro.css}" />
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login">
+			<div class="wrap-login">
+				<div class="login-pic">
+					<img th:src="@{/images/key.png}" alt="Logo">
+				</div>
+				<form autocomplete="off" action="#" th:action="@{/registration}" th:object="${user}" method="post" class="form-horizontal" role="form">
+					<span class="login-form-title">Cadastro do Login</span>
+
+					<div class="wrap-input">
+						<input class="input" type="text" th:field="*{name}" placeholder="Nome"/>
+						<span class="focus-input"></span>
+						<label th:if="${#fields.hasErrors('name')}" th:errors="*{name}" class="validation-message"></label>
+					</div>
+					
+					<div class="wrap-input">
+						<input class="input" type="text" th:field="*{userName}" placeholder="Usuário"/>
+						<span class="focus-input"></span>
+						<label th:if="${#fields.hasErrors('userName')}" th:errors="*{userName}" class="validation-message"></label>
+					</div>
+					
+					<div class="wrap-input">
+						<input class="input" type="password" th:field="*{password}"  name="password" placeholder="Senha">
+						<span class="focus-input"></span>
+						<label th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="validation-message"></label>
+
+					</div>
+
+					<div class="container-login-form-btn">
+						<button class="login-form-btn" type="Submit">Registre Seu Login</button>
+					</div>
+             
+					
+					<h2><a th:href="@{/success}" th:text="${successMessage}"><span class="text-success" th:utext="${successMessage}"></span></a></h2>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

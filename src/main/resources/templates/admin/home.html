@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sucesso</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/home.css}"/>
+</head>
+<body>
+	<div class="limiter">
+		<div class="container-login">
+			<div class="wrap-login">
+				<div class="login-pic">
+					<img th:src="@{/images/happy.png}" alt="Logo">
+				</div>
+				<form th:action="@{/login}" method="GET">
+				    <br><br>
+					<span class="login-form-title1">Seja Bem Vindo!</span>
+					<span class="login-form-title">Sua senha foi validada</span>
+					<span class="login-form-title">com sucesso</span>
+                    <span class="login-form-title2">Parabens!</span>
+					<div class="container-login-form-btn">
+						<button class="login-form-btn">Voltar para página inicial</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

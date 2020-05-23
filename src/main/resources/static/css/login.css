@@ -1,0 +1,285 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body, html {
+	height: 100%;
+	font-family: arial, sans-serif;
+}
+
+/*---------------------------------------------*/
+a {
+	font-family: arial, sans-serif;
+	font-size: 14px;
+	margin: 0px;
+}
+
+a:hover {
+	text-decoration: none;
+    color: orange;
+}
+
+
+/*---------------------------------------------*/
+input {
+	outline: none;
+	border: none;
+}
+
+textarea {
+  outline: none;
+  border: none;
+}
+
+textarea:focus, input:focus {
+  border-color: transparent !important;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+input:focus::-moz-placeholder { color:transparent; }
+input:focus:-ms-input-placeholder { color:transparent; }
+
+textarea:focus::-webkit-input-placeholder { color:transparent; }
+textarea:focus:-moz-placeholder { color:transparent; }
+textarea:focus::-moz-placeholder { color:transparent; }
+textarea:focus:-ms-input-placeholder { color:transparent; }
+
+input::-webkit-input-placeholder { color: #999999; }
+input:-moz-placeholder { color: #999999; }
+input::-moz-placeholder { color: #999999; }
+input:-ms-input-placeholder { color: #999999; }
+
+textarea::-webkit-input-placeholder { color: #999999; }
+textarea:-moz-placeholder { color: #999999; }
+textarea::-moz-placeholder { color: #999999; }
+textarea:-ms-input-placeholder { color: #999999; }
+
+/*---------------------------------------------*/
+button {
+	outline: none !important;
+	border: none;
+	background: transparent;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+iframe {
+	border: none !important;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ Utility ]*/
+.txt1 {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #999999;
+}
+
+.txt2 {
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+}
+
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login {
+  width: 100%;  
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background: ff3300;
+  background: -webkit-linear-gradient(-90deg, #ff4d4d, #ff3300);
+  background: -o-linear-gradient(-90deg, #ff4d4d, #ff3300);
+  background: -moz-linear-gradient(-90deg, #ff4d4d, #ff3300);
+  background: linear-gradient(to right, #ff4d4d, #ff3300);
+}
+
+.wrap-login{
+  width: 750px;
+  background: #fff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  padding: 30px 30px 33px 33px;
+}
+
+/*------------------------------------------------------------------
+[  ]*/
+.login-pic {
+  width: 316px;
+  overflow: hidden;
+}
+
+.login-pic img {
+	max-width: 100%;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.login-pic:hover img {
+	-moz-transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+}
+
+
+/*------------------------------------------------------------------
+[  ]*/
+.login-form {
+  width: 290px;
+}
+
+.login-form-title {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: #999999;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 15px;
+}
+
+.login-form-sucesso {
+  font-family: Arial Black, Courier New;
+  font-weight: bold;
+  font-size: 20px;
+  color: #FF1C19;
+  line-height: 1.2;
+  text-align: center;
+  width: 100%;
+  display: block;
+  padding-bottom: 15px;
+}
+/*---------------------------------------------*/
+.wrap-input {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+
+.input {
+  font-family: Arial Black, Courier New;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #666666;
+
+  display: block;
+  width: 100%;
+  background: #e6e6e6;
+  height: 50px;
+  border-radius: 25px;
+  padding: 0 10px 0 20px;
+}
+
+
+/*------------------------------------------------------------------
+[ Focus ]*/
+.focus-input {
+  display: block;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 0px 0px 0px;
+  color: rgba(87,184,70, 0.8);
+}
+
+.input:focus + .focus-input {
+  -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+  animation: anim-shadow 0.5s ease-in-out forwards;
+  color: orange;
+  padding-left: 28px;
+}
+
+
+@keyframes anim-shadow {
+  to {
+    box-shadow: 0px 0px 70px 25px;
+    opacity: 0;
+}
+}
+/*------------------------------------------------------------------
+[ Button ]*/
+.container-login-form-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.login-form-btn {
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #fff;
+  text-transform: uppercase;
+
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 25px;
+
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  
+  background: ff3300;
+  background: -webkit-linear-gradient(-90deg, #ff6666, #ff3300);
+  background: -o-linear-gradient(-90deg, #ff6666, #ff3300);
+  background: -moz-linear-gradient(-90deg, #ff6666, #ff3300);
+  background: linear-gradient(to right, #ff6666, #ff3300);
+}
+
+.login-form-btn:hover {
+  background: ff3300;
+  background: -webkit-linear-gradient(-90deg, #ff3300, #ff6666);
+  background: -o-linear-gradient(-90deg, #ff3300, #ff6666);
+  background: -moz-linear-gradient(-90deg, #ff3300, #ff6666);
+  background: linear-gradient(to right, #ff3300, #ff6666);
+}

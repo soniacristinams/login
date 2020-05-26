@@ -3,6 +3,16 @@
 <head>
 <title>Sonia Cristina Miranda Sabino</title>
 <link rel="stylesheet" type="text/css" th:href="@{/css/login.css}" />
+<script>
+  function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
 </head>
 <body>
 	<div class="limiter">
@@ -20,10 +30,13 @@
 					</div>
 					<div class="wrap-input">
 						<input class="input" type="password" id="password" name="password" placeholder="Senha">
+						<button type="button" class="btn" id="eye" onclick="myFunction()">
+                            <img src="/images/show.png" alt="eye" />
+                        </button>
 						<span class="focus-input"></span>
 					</div>
 					<div align="center" th:if="${param.error}">
-						<p style="font-size: 20; color: #FF1C19;">Usuário ou Senha inválido, por favor verifique!</p>
+						<p style="font-size: 20; color: #FF1C19;">Usuário ou Senha inválido, por favor Cadastre sua senha no link abaixo!</p>
 					</div>		
 					<div class="container-login-form-btn">
 						<button class="login-form-btn" name="Submit">Login</button>

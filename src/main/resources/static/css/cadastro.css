@@ -61,7 +61,7 @@ textarea:-ms-input-placeholder { color: #e16805; }
 button {
 	outline: none !important;
 	border: none;
-	background: transparent;
+
 }
 
 button:hover {
@@ -186,6 +186,21 @@ iframe {
   padding: 0 10px 0 20px;
 }
 
+.btn {
+position: absolute;
+right: 20px;
+top: 8px;
+bottom: 8px;
+z-index:9;
+}
+
+.btn img{
+	width: 100%;
+max-width:30px;
+    max-height:30px;
+    min-height:30px; 
+    min-width:30px;
+}
 
 /*------------------------------------------------------------------
 [ Focus ]*/

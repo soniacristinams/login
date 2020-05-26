@@ -61,7 +61,7 @@ textarea:-ms-input-placeholder { color: #999999; }
 button {
 	outline: none !important;
 	border: none;
-	background: transparent;
+
 }
 
 button:hover {
@@ -113,7 +113,7 @@ iframe {
   background: -webkit-linear-gradient(-90deg, #ff4d4d, #ff3300);
   background: -o-linear-gradient(-90deg, #ff4d4d, #ff3300);
   background: -moz-linear-gradient(-90deg, #ff4d4d, #ff3300);
-  background: linear-gradient(to right, #ff4d4d, #ff3300);
+  background: linear-gradient(-90deg, #ff4d4d, #ff3300);
 }
 
 .wrap-login{
@@ -191,16 +191,29 @@ iframe {
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
-
   display: block;
   width: 100%;
-  background: #e6e6e6;
+  background: #f0f2f4;
   height: 50px;
   border-radius: 25px;
   padding: 0 10px 0 20px;
 }
 
+.btn {
+position: absolute;
+right: 20px;
+top: 8px;
+bottom: 8px;
+z-index:9;
+}
 
+.btn img{
+	width: 100%;
+max-width:30px;
+    max-height:30px;
+    min-height:30px; 
+    min-width:30px;
+}
 /*------------------------------------------------------------------
 [ Focus ]*/
 .focus-input {

@@ -3,6 +3,16 @@
 <head>
 <title>Sonia Cristina Miranda Sabino</title>
 <link rel="stylesheet" type="text/css" th:href="@{/css/cadastro.css}" />
+<script>
+  function myFunction() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+</script>
 </head>
 <body>
 	<div class="limiter">
@@ -28,11 +38,12 @@
 					
 					<div class="wrap-input">
 						<input class="input" type="password" th:field="*{password}"  name="password" placeholder="Senha">
+						    <button type="button" class="btn" id="eye" onclick="myFunction()">
+                                <img src="/images/show.png" alt="eye" />
+                            </button>
 						<span class="focus-input"></span>
-						<label th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="validation-message"></label>
-
 					</div>
-
+                   <label th:if="${#fields.hasErrors('password')}" th:errors="*{password}" class="validation-message"></label>
 					<div class="container-login-form-btn">
 						<button class="login-form-btn" type="Submit">Registre Seu Login</button>
 					</div>

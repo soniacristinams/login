@@ -42,7 +42,7 @@ public class User {
     @Pattern(regexp = "(?=.*[0-9]).+", message = "Ao menos 1 dígito")
     @Pattern(regexp = "(?=.*[a-z]).+", message = "Ao menos 1 letra minúscula")
     @Pattern(regexp = "(?=.*[A-Z]).+", message = "Ao menos 1 letra maiúscula")
-    @Pattern(regexp = "(?=.*[!@#$%^&*+=?-_()/\"\\.,<>~`;:]).+", message ="Ao menos 1 caractere especial")
+    @Pattern(regexp = "(?=.*[@#$%^&!?.,:+=]).+", message ="Ao menos 1 caractere especial")
     private String password;
     @Column(name = "name")
     @NotEmpty(message = "Por favor digite seu nome")

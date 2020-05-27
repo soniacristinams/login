@@ -1,7 +1,7 @@
 # login
 <h2><b>API de validação de senha - Spring boot</b></h2>
 <br>
-<br>
+
 A API se encontra hospedada no AWS, pronta para execução e testes de funcionalidade. <br>
 Segue link: http://login-env.eba-hbgjpfe3.us-east-1.elasticbeanstalk.com/
 <br>
@@ -25,8 +25,8 @@ Após confirmação do cadastro do usuario e senha, voltar a página de login e 
 - Ao menos 1 letra maiúscula
 - Ao menos 1 caractere especial
 - Não possuir caracteres repetidos
-
 <br>
+
 <b>Exemplo:</b>
 <br>
 
@@ -36,9 +36,8 @@ Após confirmação do cadastro do usuario e senha, voltar a página de login e 
 - IsValid("AAAbbbCc") -> false  
 - IsValid("AbTp9!foo") -> false  
 - IsValid("AbTp9!fok") -> true
-
-
 <br>
+
 <b>Decisões técnicas</b>
 <br>
 
@@ -49,6 +48,7 @@ Fiz as validações nas camadas Controller e Model da arquitetura MVC, para evit
 <br>
 OBS: Caso queiram hospedar a API no seu proprio ambiente, seguem instruções abaixo:
 <br><br>
+
 <b>Para execução do sistema em produção</b>
 <br>
 
@@ -58,7 +58,7 @@ OBS: Caso queiram hospedar a API no seu proprio ambiente, seguem instruções ab
 - Alterar o arquivo application.properties com a URL, username e password do novo Banco de dados criado.
 - Gerar WAR com o Maven install, o WAR login.war será gerado dentro da pasta target
 - Fazer o deploy do WAR no S3 beanstalk do AWS
+<br>
+<br>
 
-<br>
-<br>
 <b><i>Gratidão</i></b>

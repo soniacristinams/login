@@ -6,6 +6,7 @@ A API se encontra hospedada no AWS, pronta para execução e testes de funcional
 Segue link: http://login-env.eba-hbgjpfe3.us-east-1.elasticbeanstalk.com/
 <br>
 <br>
+
 <b>Página inicial tela de login</b>
 <br>
 
@@ -14,6 +15,7 @@ Quem está acessando pela primeira vez, clicar no link abaixo do botão para ser
 Na página de registro, é necessario preencher nome, usuario e senha. Sua senha será cadastrada, caso atenda as definições estabelecidas.
 Após confirmação do cadastro do usuario e senha, voltar a página de login e efetuar o acesso ao site.
 <br>
+
 <b>Definições estabeleciadas para validação de senha:</b>
 <br>
 
@@ -24,6 +26,7 @@ Após confirmação do cadastro do usuario e senha, voltar a página de login e 
 - Ao menos 1 caractere especial
 - Não possuir caracteres repetidos
 
+<br>
 <b>Exemplo:</b>
 <br>
 

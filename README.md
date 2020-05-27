@@ -8,6 +8,7 @@ Segue link: http://login-env.eba-hbgjpfe3.us-east-1.elasticbeanstalk.com/
 <br>
 <b>Página inicial tela de login</b>
 <br>
+
 Para ter acesso ao site é necessario ter usuario e senha.
 Quem está acessando pela primeira vez, clicar no link abaixo do botão para ser direcionado para a pagina de registro de senha.
 Na página de registro, é necessario preencher nome, usuario e senha. Sua senha será cadastrada, caso atenda as definições estabelecidas.
@@ -37,6 +38,7 @@ Após confirmação do cadastro do usuario e senha, voltar a página de login e 
 <br>
 <b>Decisões técnicas</b>
 <br>
+
 Para validar cada uma das definições de senha, utilizei expressões regulares (Regex) pertecentes as bibliotecas Javax e Java.util.
 Fiz as validações nas camadas Controller e Model da arquitetura MVC, para evitar que senhas de formato inválido fossem salvas no banco de dados.
 <br>
